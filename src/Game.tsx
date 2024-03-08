@@ -1,9 +1,8 @@
 import React from "react";
 
-const Game = ({ customWordItem, listItem, lifes }) => {
+const Game = ({ customWordItem, listItem }) => {
   return (
     <>
-      <p className="life-count">Lifes left: {lifes}</p>
       <ul className="guess-word">{customWordItem}</ul>
       <ul className="alphabet">{listItem}</ul>
       <div className="hangman"></div>

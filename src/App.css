@@ -89,14 +89,6 @@ button {
   flex-direction: column;
 }
 
-.life-count {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5rem;
-}
-
 .guess-word {
   display: flex;
   flex-wrap: wrap;
@@ -106,8 +98,7 @@ button {
   justify-content: center;
   /* flex-basis: 50%; */
   /* so that the ::before stays down even when thre is a space */
-  padding: 6rem;
-  padding-block-start: 1rem;
+  padding: 8rem;
 
   & li {
     text-align: center;
@@ -170,8 +161,6 @@ li.clicked {
 
 li.correct {
   background-color: #0b8b0673 !important;
-  color: white !important;
-  pointer-events: none;
 }
 
 .hangman {
@@ -305,88 +294,6 @@ li.correct {
     .word:hover {
       background-color: #cab1eb;
       color: white;
-    }
-  }
-}
-
-.game-end {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.705);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .info-pannel {
-    padding: 2rem 4rem;
-    width: 600px;
-    background-color: rgba(255, 255, 255, 0.178);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-
-    .reveal {
-      color: rgb(53, 206, 53);
-    }
-
-    .center {
-      width: 100%;
-      text-align: center;
-    }
-
-    & h2 {
-      font-size: 64px;
-      letter-spacing: 1px;
-    }
-
-    .stats {
-      margin-top: 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      column-gap: 2rem;
-      justify-content: space-between;
-
-      & p {
-        width: 200px;
-        /* background-color: red; */
-        display: flex;
-        justify-content: space-between;
-      }
-    }
-
-    .options {
-      display: flex;
-      width: 100%;
-      justify-content: space-around;
-      padding-top: 1.5rem;
-      font-size: 20px;
-
-      & button {
-        width: 150px;
-        padding: 0.3rem 0;
-        border-radius: 0.6rem;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        background: white;
-        color: black;
-        transition: 200ms ease;
-      }
-
-      .exit {
-        background: none;
-        border: 1px solid white;
-        color: white;
-      }
-
-      .exit:hover {
-        background: rgba(255, 255, 255, 0.1);
-      }
-
-      .restart:hover {
-        background: rgba(255, 255, 255, 0.8);
-      }
     }
   }
 }
